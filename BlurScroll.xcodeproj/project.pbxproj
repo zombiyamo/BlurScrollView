@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1642D9D1D2A3A5900D5E4F5 /* rectbear.png in Resources */ = {isa = PBXBuildFile; fileRef = B1642D9C1D2A3A5900D5E4F5 /* rectbear.png */; };
+		B183283A1D2942CF0023CD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18328391D2942CF0023CD0A /* AppDelegate.swift */; };
+		B183283C1D2942CF0023CD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183283B1D2942CF0023CD0A /* ViewController.swift */; };
+		B183283F1D2942CF0023CD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B183283D1D2942CF0023CD0A /* Main.storyboard */; };
+		B18328411D2942CF0023CD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18328401D2942CF0023CD0A /* Assets.xcassets */; };
+		B18328441D2942CF0023CD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18328421D2942CF0023CD0A /* LaunchScreen.storyboard */; };
+		B183284F1D2942CF0023CD0A /* BlurScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183284E1D2942CF0023CD0A /* BlurScrollTests.swift */; };
+		B183285A1D2942CF0023CD0A /* BlurScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18328591D2942CF0023CD0A /* BlurScrollUITests.swift */; };
+		B18328681D2942E90023CD0A /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = B18328671D2942E90023CD0A /* bear.png */; };
+		B183286B1D2A2EC10023CD0A /* fox.png in Resources */ = {isa = PBXBuildFile; fileRef = B18328691D2A2EC10023CD0A /* fox.png */; };
+		B183286C1D2A2EC10023CD0A /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = B183286A1D2A2EC10023CD0A /* dog.png */; };
+		B1D254D31D2A4B3800B0B3AA /* CATransition+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D254D01D2A4B3800B0B3AA /* CATransition+Closure.swift */; };
+		B1D254D41D2A4B3800B0B3AA /* SABlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D254D11D2A4B3800B0B3AA /* SABlurImageView.swift */; };
+		B1D254D51D2A4B3800B0B3AA /* UIImage+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D254D21D2A4B3800B0B3AA /* UIImage+BlurEffect.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B183284B1D2942CF0023CD0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B183282E1D2942CF0023CD0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18328351D2942CF0023CD0A;
+			remoteInfo = BlurScroll;
+		};
+		B18328561D2942CF0023CD0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B183282E1D2942CF0023CD0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18328351D2942CF0023CD0A;
+			remoteInfo = BlurScroll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1642D9C1D2A3A5900D5E4F5 /* rectbear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectbear.png; sourceTree = "<group>"; };
+		B18328361D2942CF0023CD0A /* BlurScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlurScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18328391D2942CF0023CD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B183283B1D2942CF0023CD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B183283E1D2942CF0023CD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B18328401D2942CF0023CD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B18328431D2942CF0023CD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B18328451D2942CF0023CD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B183284A1D2942CF0023CD0A /* BlurScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B183284E1D2942CF0023CD0A /* BlurScrollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurScrollTests.swift; sourceTree = "<group>"; };
+		B18328501D2942CF0023CD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18328551D2942CF0023CD0A /* BlurScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18328591D2942CF0023CD0A /* BlurScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurScrollUITests.swift; sourceTree = "<group>"; };
+		B183285B1D2942CF0023CD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18328671D2942E90023CD0A /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		B18328691D2A2EC10023CD0A /* fox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fox.png; sourceTree = "<group>"; };
+		B183286A1D2A2EC10023CD0A /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		B1D254D01D2A4B3800B0B3AA /* CATransition+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransition+Closure.swift"; sourceTree = "<group>"; };
+		B1D254D11D2A4B3800B0B3AA /* SABlurImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SABlurImageView.swift; sourceTree = "<group>"; };
+		B1D254D21D2A4B3800B0B3AA /* UIImage+BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+BlurEffect.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B18328331D2942CF0023CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18328471D2942CF0023CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18328521D2942CF0023CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B183282D1D2942CF0023CD0A = {
+			isa = PBXGroup;
+			children = (
+				B18328381D2942CF0023CD0A /* BlurScroll */,
+				B183284D1D2942CF0023CD0A /* BlurScrollTests */,
+				B18328581D2942CF0023CD0A /* BlurScrollUITests */,
+				B18328371D2942CF0023CD0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B18328371D2942CF0023CD0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B18328361D2942CF0023CD0A /* BlurScroll.app */,
+				B183284A1D2942CF0023CD0A /* BlurScrollTests.xctest */,
+				B18328551D2942CF0023CD0A /* BlurScrollUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18328381D2942CF0023CD0A /* BlurScroll */ = {
+			isa = PBXGroup;
+			children = (
+				B18328391D2942CF0023CD0A /* AppDelegate.swift */,
+				B183283B1D2942CF0023CD0A /* ViewController.swift */,
+				B18328671D2942E90023CD0A /* bear.png */,
+				B18328691D2A2EC10023CD0A /* fox.png */,
+				B183286A1D2A2EC10023CD0A /* dog.png */,
+				B183283D1D2942CF0023CD0A /* Main.storyboard */,
+				B1642D9C1D2A3A5900D5E4F5 /* rectbear.png */,
+				B18328401D2942CF0023CD0A /* Assets.xcassets */,
+				B18328421D2942CF0023CD0A /* LaunchScreen.storyboard */,
+				B1D254D61D2A4B4800B0B3AA /* SABlurImageView */,
+				B18328451D2942CF0023CD0A /* Info.plist */,
+			);
+			path = BlurScroll;
+			sourceTree = "<group>";
+		};
+		B183284D1D2942CF0023CD0A /* BlurScrollTests */ = {
+			isa = PBXGroup;
+			children = (
+				B183284E1D2942CF0023CD0A /* BlurScrollTests.swift */,
+				B18328501D2942CF0023CD0A /* Info.plist */,
+			);
+			path = BlurScrollTests;
+			sourceTree = "<group>";
+		};
+		B18328581D2942CF0023CD0A /* BlurScrollUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B18328591D2942CF0023CD0A /* BlurScrollUITests.swift */,
+				B183285B1D2942CF0023CD0A /* Info.plist */,
+			);
+			path = BlurScrollUITests;
+			sourceTree = "<group>";
+		};
+		B1D254D61D2A4B4800B0B3AA /* SABlurImageView */ = {
+			isa = PBXGroup;
+			children = (
+				B1D254D01D2A4B3800B0B3AA /* CATransition+Closure.swift */,
+				B1D254D11D2A4B3800B0B3AA /* SABlurImageView.swift */,
+				B1D254D21D2A4B3800B0B3AA /* UIImage+BlurEffect.swift */,
+			);
+			name = SABlurImageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B18328351D2942CF0023CD0A /* BlurScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B183285E1D2942CF0023CD0A /* Build configuration list for PBXNativeTarget "BlurScroll" */;
+			buildPhases = (
+				B18328321D2942CF0023CD0A /* Sources */,
+				B18328331D2942CF0023CD0A /* Frameworks */,
+				B18328341D2942CF0023CD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlurScroll;
+			productName = BlurScroll;
+			productReference = B18328361D2942CF0023CD0A /* BlurScroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B18328491D2942CF0023CD0A /* BlurScrollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18328611D2942CF0023CD0A /* Build configuration list for PBXNativeTarget "BlurScrollTests" */;
+			buildPhases = (
+				B18328461D2942CF0023CD0A /* Sources */,
+				B18328471D2942CF0023CD0A /* Frameworks */,
+				B18328481D2942CF0023CD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B183284C1D2942CF0023CD0A /* PBXTargetDependency */,
+			);
+			name = BlurScrollTests;
+			productName = BlurScrollTests;
+			productReference = B183284A1D2942CF0023CD0A /* BlurScrollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B18328541D2942CF0023CD0A /* BlurScrollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18328641D2942CF0023CD0A /* Build configuration list for PBXNativeTarget "BlurScrollUITests" */;
+			buildPhases = (
+				B18328511D2942CF0023CD0A /* Sources */,
+				B18328521D2942CF0023CD0A /* Frameworks */,
+				B18328531D2942CF0023CD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18328571D2942CF0023CD0A /* PBXTargetDependency */,
+			);
+			name = BlurScrollUITests;
+			productName = BlurScrollUITests;
+			productReference = B18328551D2942CF0023CD0A /* BlurScrollUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B183282E1D2942CF0023CD0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Zombiyamo;
+				TargetAttributes = {
+					B18328351D2942CF0023CD0A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B18328491D2942CF0023CD0A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B18328351D2942CF0023CD0A;
+					};
+					B18328541D2942CF0023CD0A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B18328351D2942CF0023CD0A;
+					};
+				};
+			};
+			buildConfigurationList = B18328311D2942CF0023CD0A /* Build configuration list for PBXProject "BlurScroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B183282D1D2942CF0023CD0A;
+			productRefGroup = B18328371D2942CF0023CD0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B18328351D2942CF0023CD0A /* BlurScroll */,
+				B18328491D2942CF0023CD0A /* BlurScrollTests */,
+				B18328541D2942CF0023CD0A /* BlurScrollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B18328341D2942CF0023CD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B183286C1D2A2EC10023CD0A /* dog.png in Resources */,
+				B1642D9D1D2A3A5900D5E4F5 /* rectbear.png in Resources */,
+				B18328441D2942CF0023CD0A /* LaunchScreen.storyboard in Resources */,
+				B183286B1D2A2EC10023CD0A /* fox.png in Resources */,
+				B18328681D2942E90023CD0A /* bear.png in Resources */,
+				B18328411D2942CF0023CD0A /* Assets.xcassets in Resources */,
+				B183283F1D2942CF0023CD0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18328481D2942CF0023CD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18328531D2942CF0023CD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B18328321D2942CF0023CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D254D31D2A4B3800B0B3AA /* CATransition+Closure.swift in Sources */,
+				B183283C1D2942CF0023CD0A /* ViewController.swift in Sources */,
+				B183283A1D2942CF0023CD0A /* AppDelegate.swift in Sources */,
+				B1D254D51D2A4B3800B0B3AA /* UIImage+BlurEffect.swift in Sources */,
+				B1D254D41D2A4B3800B0B3AA /* SABlurImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18328461D2942CF0023CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B183284F1D2942CF0023CD0A /* BlurScrollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18328511D2942CF0023CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B183285A1D2942CF0023CD0A /* BlurScrollUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B183284C1D2942CF0023CD0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18328351D2942CF0023CD0A /* BlurScroll */;
+			targetProxy = B183284B1D2942CF0023CD0A /* PBXContainerItemProxy */;
+		};
+		B18328571D2942CF0023CD0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18328351D2942CF0023CD0A /* BlurScroll */;
+			targetProxy = B18328561D2942CF0023CD0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B183283D1D2942CF0023CD0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B183283E1D2942CF0023CD0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B18328421D2942CF0023CD0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18328431D2942CF0023CD0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B183285C1D2942CF0023CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B183285D1D2942CF0023CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B183285F1D2942CF0023CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlurScroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zombiyamo.BlurScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B18328601D2942CF0023CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlurScroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zombiyamo.BlurScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B18328621D2942CF0023CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlurScrollTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zombiyamo.BlurScrollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlurScroll.app/BlurScroll";
+			};
+			name = Debug;
+		};
+		B18328631D2942CF0023CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlurScrollTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zombiyamo.BlurScrollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlurScroll.app/BlurScroll";
+			};
+			name = Release;
+		};
+		B18328651D2942CF0023CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlurScrollUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zombiyamo.BlurScrollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BlurScroll;
+			};
+			name = Debug;
+		};
+		B18328661D2942CF0023CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlurScrollUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zombiyamo.BlurScrollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BlurScroll;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B18328311D2942CF0023CD0A /* Build configuration list for PBXProject "BlurScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B183285C1D2942CF0023CD0A /* Debug */,
+				B183285D1D2942CF0023CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B183285E1D2942CF0023CD0A /* Build configuration list for PBXNativeTarget "BlurScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B183285F1D2942CF0023CD0A /* Debug */,
+				B18328601D2942CF0023CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18328611D2942CF0023CD0A /* Build configuration list for PBXNativeTarget "BlurScrollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18328621D2942CF0023CD0A /* Debug */,
+				B18328631D2942CF0023CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18328641D2942CF0023CD0A /* Build configuration list for PBXNativeTarget "BlurScrollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18328651D2942CF0023CD0A /* Debug */,
+				B18328661D2942CF0023CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B183282E1D2942CF0023CD0A /* Project object */;
+}
