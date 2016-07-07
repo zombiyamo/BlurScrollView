@@ -215,6 +215,8 @@ etc...</string>
                     <connections>
                         <outlet property="backgroundImageView" destination="hAc-Dj-0MX" id="5qt-FY-xEG"/>
                         <outlet property="bearScrollView" destination="gWH-4v-U9P" id="AeS-gH-pgd"/>
+                        <outlet property="topLabel" destination="CpL-c5-tJP" id="Kt2-tz-MMS"/>
+                        <outlet property="topsubLabel" destination="1nn-Sr-a0Q" id="7gB-ny-ha7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

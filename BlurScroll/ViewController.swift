@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController{
 
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var topsubLabel: UILabel!
+    
     @IBOutlet weak var backgroundImageView: UIImageView?
     
     @IBOutlet weak var bearScrollView: UIScrollView?
@@ -32,6 +35,9 @@ class ViewController: UIViewController{
         self.view.addSubview(backgroundImageView)
         backgroundImageView.alpha = 0.0
         self.view.bringSubviewToFront(bearScrollView)
+        
+        topLabel.adjustsFontSizeToFitWidth = true
+        topsubLabel.adjustsFontSizeToFitWidth = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,12 +53,14 @@ extension ViewController: UIScrollViewDelegate {
         print(scrollBeginPoint)
     }
     
-//    func scrollViewDidScroll(scrollView: UIScrollView) {
-//        
-//    }
+    func setNavOpacity(opacity: CGFloat) {
+        if let backgroundImageView = backgroundImageView {
+            backgroundImageView.alpha = opacity
+        }
+    }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        let currentPoint = scrollView.contentOffset
+/*        let currentPoint = scrollView.contentOffset
         guard let scrollBeginPoint = scrollBeginPoint else { return }
         print(scrollView.frame.height)
         if scrollBeginPoint.y < currentPoint.y {
@@ -72,5 +80,10 @@ extension ViewController: UIScrollViewDelegate {
                 print(blurPara)
             }
         }
+*/
+        let scrollValue = scrollView.contentOffset.y
+        var opacity: CGFloat
+        opacity = (scrollValue - 60)/200
+        self.setNavOpacity(opacity)
     }
 }
