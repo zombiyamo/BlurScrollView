@@ -28,7 +28,7 @@ class ViewController: UIViewController{
         guard let backgroundImageView = backgroundImageView else { return }
         guard let bearScrollView = bearScrollView else { return }
         
-        self.bearScrollView?.delegate = self
+        bearScrollView.delegate = self
         
         visualEffectView.frame = backgroundImageView.frame
         backgroundImageView.addSubview(visualEffectView)
@@ -48,11 +48,6 @@ class ViewController: UIViewController{
 }
 
 extension ViewController: UIScrollViewDelegate {
-    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        scrollBeginPoint = scrollView.contentOffset
-        print(scrollBeginPoint)
-    }
-    
     func setNavOpacity(opacity: CGFloat) {
         if let backgroundImageView = backgroundImageView {
             backgroundImageView.alpha = opacity
@@ -60,27 +55,6 @@ extension ViewController: UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-/*        let currentPoint = scrollView.contentOffset
-        guard let scrollBeginPoint = scrollBeginPoint else { return }
-        print(scrollView.frame.height)
-        if scrollBeginPoint.y < currentPoint.y {
-            print("下スクロール")
-            if blurPara<1.0 && scrollBeginPoint.y > 0.0 && scrollBeginPoint.y < scrollView.frame.height{
-                blurPara += 0.05
-                guard let backgroundImageView = backgroundImageView else { return }
-                backgroundImageView.alpha = blurPara
-                print(blurPara)
-            }
-        }else{
-            print("上スクロール")
-            if blurPara>0.0 && scrollBeginPoint.y > 0.0 && scrollBeginPoint.y < scrollView.frame.height{
-                blurPara -= 0.05
-                guard let backgroundImageView = backgroundImageView else { return }
-                backgroundImageView.alpha = blurPara
-                print(blurPara)
-            }
-        }
-*/
         let scrollValue = scrollView.contentOffset.y
         var opacity: CGFloat
         opacity = (scrollValue - 60)/200
